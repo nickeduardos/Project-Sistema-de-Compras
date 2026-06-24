@@ -1,0 +1,83 @@
+import os
+import time
+import json
+
+def limpar_tela ():
+    os.system("cls")
+
+def aguarde (segundos):
+    time.sleep (segundos)
+
+def InicializarBancosDeDados ():
+    ARQUIVO_BD = "DbCompras.txt"
+    if not os.path.exists(ARQUIVO_BD):
+        with open (ARQUIVO_BD, "w", encoding = "utf-8") as db:
+            pass
+        for numeros in range(4):
+            print(f"Aguarde, Criando Banco de dados{"." * numeros}")
+            time.sleep (1)
+            limpar_tela()
+    else: 
+        for numeros in range(4):
+            print(f"Aguarde, Inicializando Banco de dados{"." * numeros}")
+            time.sleep (1)
+            limpar_tela()
+
+def ascii_cafe ():
+    print ('''
+ ______     ______     ______   ______        _____     ______   
+/\  ___\   /\  __ \   /\  ___\ /\  ___\      /\  __-.  /\  __ \  
+\ \ \____  \ \  __ \  \ \  __\ \ \  __\      \ \ \/\ \ \ \  __ \ 
+ \ \_____\  \ \_\ \_\  \ \_\    \ \_____\     \ \____-  \ \_\ \_\
+
+                                                    
+ ______   __     ______     __    __     ______                  
+/\  ___\ /\ \   /\  == \   /\ "-./  \   /\  __ \                 
+\ \  __\ \ \ \  \ \  __<   \ \ \-./\ \  \ \  __ \                
+ \ \_\    \ \_\  \ \_\ \_\  \ \_\ \ \_\  \ \_\ \_\               
+  \/_/     \/_/   \/_/ /_/   \/_/  \/_/   \/_/\/_/               
+''')
+    
+def ascii_anotar ():
+    print ('''
+    _    _   _  ___ _____  _    ____       _                             
+   / \  | \ | |/ _ \_   _|/ \  |  _ \     / \                            
+  / _ \ |  \| | | | || | / _ \ | |_) |   / _ \                           
+ / ___ \| |\  | |_| || |/ ___ \|  _ <   / ___ \                          
+/_/  _\_\_| \_|\___/ |_/_/ _ \_\_| \_\_/_/_  \_\ __ ____  ____      _    
+|  \/  |_ _| \ | | | | |  / \     / ___/ _ \|  \/  |  _ \|  _ \    / \   
+| |\/| || ||  \| | |_| | / _ \   | |  | | | | |\/| | |_) | |_) |  / _ \  
+| |  | || || |\  |  _  |/ ___ \  | |__| |_| | |  | |  __/|  _ <  / ___ \ 
+|_|  |_|___|_| \_|_| |_/_/   \_\  \____\___/|_|  |_|_|   |_| \_\/_/   \_\
+''')
+    
+def texto_cafe_da_firma ():
+    print ('''BEM VINDO AO SISTEMA DE COMPRAS DO CAFÉ DA EXPERT!
+senha matheus 1234
+senha jhan 4567
+senha nick 8910
+LISTA DE USUÁRIOS:
+
+-> MATHEUS
+
+-> JHANPIERRI
+       
+-> NICK
+''')
+    
+def erro_de_caractere ():
+    print ("POR FAVOR, DIGITE O NÚMERO DA OPÇÃO QUE DESEJA.")
+    time.sleep (2)
+    limpar_tela ()
+
+def mensagem_aguarde ():
+    time.sleep (0.5)
+    for contagem_numeros in range (1,4):
+        limpar_tela ()
+        print (f"AGUARDE{"." * contagem_numeros}")
+        time.sleep (1)
+        limpar_tela ()
+    time.sleep (1)
+
+def alterar_cor (cor):
+    os.system(cor)
