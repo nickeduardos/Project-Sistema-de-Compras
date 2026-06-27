@@ -1,6 +1,5 @@
 import os
 import time
-import json
 
 def limpar_tela ():
     os.system("cls")
@@ -20,7 +19,7 @@ def InicializarBancosDeDados ():
     else: 
         for numeros in range(4):
             print(f"Aguarde, Inicializando Banco de dados{"." * numeros}")
-            time.sleep (1)
+            time.sleep (0.5)
             limpar_tela()
 
 def ascii_cafe ():
@@ -50,7 +49,7 @@ def ascii_anotar ():
 | |  | || || |\  |  _  |/ ___ \  | |__| |_| | |  | |  __/|  _ <  / ___ \ 
 |_|  |_|___|_| \_|_| |_/_/   \_\  \____\___/|_|  |_|_|   |_| \_\/_/   \_\
 ''')
-    
+
 def texto_cafe_da_firma ():
     print ('''BEM VINDO AO SISTEMA DE COMPRAS DO CAFÉ DA EXPERT!
 senha matheus 1234
