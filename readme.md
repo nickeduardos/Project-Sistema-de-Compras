@@ -3,7 +3,7 @@
 
 Um sistema interativo em terminal (CLI) desenvolvido em Python para gerenciar e anotar as compras de café da equipe, garantindo o controle de quem trouxe o pão ou a nata da vez.
 
-O Café da Firma foi criado para automatizar e organizar o registro de compras de itens de café da manhã de uma equipe. O programa conta com uma interface personalizada diretamente no terminal, utilizando cores e artes em formato ASCII para tornar a experiência mais amigável e divertida.
+O Café da Firma foi criado para automatizar e organizar o registro de compras de itens de café da manhã de uma equipe. O programa conta com uma interface personalizada diretamente no terminal, utilizando artes em formato ASCII para tornar a experiência mais amigável e divertida.
 
 ------------------- FUNCIONALIDADES -------------------
 
