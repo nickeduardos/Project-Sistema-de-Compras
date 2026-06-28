@@ -30,7 +30,6 @@ def menu():
                 passw = int( input ("DIGITE A SUA SENHA: "))
                 aguarde (1)
 
-                user = user.upper()
                 if user == "MATHEUS" and passw == 123:
                     LoopUser = False
                     return "MATHEUS"
@@ -75,9 +74,9 @@ def menu_matheus():
         try:
             EscolhaMenuUser = int (input (f'''BEM VINDO AO SISTEMA DE COMPRAS DO CAFÉ DA EXPERT, {user}!
                                             
-1 -> ANOTAR A MINHA COMPRA
-2 -> RELAÇÃO DE COMPRAS DA EQUIPE
-3 -> SAIR
+[1] ANOTAR A MINHA COMPRA
+[2] RELAÇÃO DE COMPRAS DA EQUIPE
+[3] SAIR
 
 DIGITE O NÚMERO REFERENTE A OPÇÃO QUE DESEJA ESCOLHER: '''))
             break
@@ -102,13 +101,13 @@ DIGITE O NÚMERO REFERENTE A OPÇÃO QUE DESEJA ESCOLHER: '''))
                 try:
                     compra_usuario_anotar = int (input ('''LISTA DE PRODUTOS:
                                                             
-1 -> PÃO
+[1] PÃO
                                                                 
-2 -> NATA                                                
+[2] NATA                                                
 
-3 -> AMBOS (PÃO E NATA)
+[3] AMBOS (PÃO E NATA)
 
-4 -> VOLTAR PARA O MENU PRINCIPAL
+[4] VOLTAR PARA O MENU PRINCIPAL
                                                                                     
 DIGITE O NÚMERO DO PRODUTO QUE VOCÊ COMPROU: '''))
                     rodando_segundo = False
@@ -211,9 +210,9 @@ def menu_jhanpierri():
         try:
             EscolhaMenuUser = int (input (f'''BEM VINDO AO SISTEMA DE COMPRAS DO CAFÉ DA EXPERT, {user}!
                                             
-1 -> ANOTAR A MINHA COMPRA
-2 -> RELAÇÃO DE COMPRAS DA EQUIPE
-3 -> SAIR
+[1] ANOTAR A MINHA COMPRA
+[2] RELAÇÃO DE COMPRAS DA EQUIPE
+[3] SAIR
 
 DIGITE O NÚMERO REFERENTE A OPÇÃO QUE DESEJA ESCOLHER: '''))
             break
@@ -238,13 +237,13 @@ DIGITE O NÚMERO REFERENTE A OPÇÃO QUE DESEJA ESCOLHER: '''))
                 try:
                     compra_usuario_anotar = int (input ('''LISTA DE PRODUTOS:
                                                             
-1 -> PÃO
+[1] PÃO
                                                                 
-2 -> NATA                                                
+[2] NATA                                                
 
-3 -> AMBOS (PÃO E NATA)
+[3] AMBOS (PÃO E NATA)
 
-4 -> VOLTAR PARA O MENU PRINCIPAL
+[4] VOLTAR PARA O MENU PRINCIPAL
                                                                                     
 DIGITE O NÚMERO DO PRODUTO QUE VOCÊ COMPROU: '''))
                     rodando_segundo = False
@@ -347,9 +346,9 @@ def menu_nick():
         try:
             EscolhaMenuUser = int (input (f'''BEM VINDO AO SISTEMA DE COMPRAS DO CAFÉ DA EXPERT, {user}!
                                             
-1 -> ANOTAR A MINHA COMPRA
-2 -> RELAÇÃO DE COMPRAS DA EQUIPE
-3 -> SAIR
+[1] ANOTAR A MINHA COMPRA
+[2] RELAÇÃO DE COMPRAS DA EQUIPE
+[3] SAIR
 
 DIGITE O NÚMERO REFERENTE A OPÇÃO QUE DESEJA ESCOLHER: '''))
             break
@@ -374,13 +373,13 @@ DIGITE O NÚMERO REFERENTE A OPÇÃO QUE DESEJA ESCOLHER: '''))
                 try:
                     compra_usuario_anotar = int (input ('''LISTA DE PRODUTOS:
                                                             
-1 -> PÃO
+[1] PÃO
                                                                 
-2 -> NATA                                                
+[2] NATA                                                
 
-3 -> AMBOS (PÃO E NATA)
+[3] AMBOS (PÃO E NATA)
 
-4 -> VOLTAR PARA O MENU PRINCIPAL
+[4] VOLTAR PARA O MENU PRINCIPAL
                                                                                     
 DIGITE O NÚMERO DO PRODUTO QUE VOCÊ COMPROU: '''))
                     rodando_segundo = False

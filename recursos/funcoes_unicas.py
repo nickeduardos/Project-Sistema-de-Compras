@@ -23,11 +23,11 @@ senha jhan 456
 senha nick 789
 LISTA DE USUÁRIOS:
 
--> MATHEUS
+[1] MATHEUS
 
--> JHANPIERRI
+[2] JHANPIERRI
        
--> NICK''')
+[3] NICK''')
 
 def ascii_cafe ():
     print ('''
