@@ -1,12 +1,6 @@
 import os
 import time
 
-def limpar_tela ():
-    os.system("cls")
-
-def aguarde (segundos):
-    time.sleep (segundos)
-
 def InicializarBancosDeDados ():
     ARQUIVO_BD = "DbCompras.txt"
     if not os.path.exists(ARQUIVO_BD):
@@ -21,6 +15,19 @@ def InicializarBancosDeDados ():
             print(f"Aguarde, Inicializando Banco de dados{"." * numeros}")
             time.sleep (0.5)
             limpar_tela()
+
+def texto_cafe_da_firma ():
+    print ('''BEM VINDO AO SISTEMA DE COMPRAS DO CAFÉ DA EXPERT!
+senha matheus 123
+senha jhan 456
+senha nick 789
+LISTA DE USUÁRIOS:
+
+-> MATHEUS
+
+-> JHANPIERRI
+       
+-> NICK''')
 
 def ascii_cafe ():
     print ('''
@@ -50,24 +57,33 @@ def ascii_anotar ():
 |_|  |_|___|_| \_|_| |_/_/   \_\  \____\___/|_|  |_|_|   |_| \_\/_/   \_\
 ''')
 
-def texto_cafe_da_firma ():
-    print ('''BEM VINDO AO SISTEMA DE COMPRAS DO CAFÉ DA EXPERT!
-senha matheus 1234
-senha jhan 4567
-senha nick 8910
-LISTA DE USUÁRIOS:
-
--> MATHEUS
-
--> JHANPIERRI
-       
--> NICK
+def ascii_relatorio():
+    print ('''
+ _____  ______ _            _______ ____  _____  _____ ____  
+|  __ \|  ____| |        /\|__   __/ __ \|  __ \|_   _/ __ \ 
+| |__) | |__  | |       /  \  | | | |  | | |__) | | || |  | |
+|  _  /|  __| | |      / /\ \ | | | |  | |  _  /  | || |  | |
+| | \ \| |____| |____ / ____ \| | | |__| | | \ \ _| || |__| |
+|_|__\_\______|______/_/    \_\_|  \____/|_|  \_\_____\____/ 
+|  __ \|  ____|                                              
+| |  | | |__                                                 
+| |  | |  __|                                                
+| |__| | |____                                               
+|_____/|______|_  __ _____  _____             _____          
+ / ____/ __ \|  \/  |  __ \|  __ \     /\    / ____|         
+| |   | |  | | \  / | |__) | |__) |   /  \  | (___           
+| |   | |  | | |\/| |  ___/|  _  /   / /\ \  \___ \          
+| |___| |__| | |  | | |    | | \ \  / ____ \ ____) |         
+ \_____\____/|_|  |_|_|    |_|  \_\/_/    \_\_____/          
 ''')
     
 def erro_de_caractere ():
     print ("POR FAVOR, DIGITE O NÚMERO DA OPÇÃO QUE DESEJA.")
     time.sleep (2)
     limpar_tela ()
+
+def aguarde (segundos):
+    time.sleep (segundos)
 
 def mensagem_aguarde ():
     time.sleep (0.5)
@@ -78,5 +94,5 @@ def mensagem_aguarde ():
         limpar_tela ()
     time.sleep (1)
 
-def alterar_cor (cor):
-    os.system(cor)
+def limpar_tela ():
+    os.system("cls")
