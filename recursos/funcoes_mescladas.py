@@ -10,6 +10,7 @@ def menu():
     while rodando:
         limpar_tela()
         InicializarBancosDeDados()
+        alterar_cor("color a")
 
         aguarde (1)
 

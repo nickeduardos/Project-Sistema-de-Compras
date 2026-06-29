@@ -96,3 +96,6 @@ def mensagem_aguarde ():
 
 def limpar_tela ():
     os.system("cls")
+
+def alterar_cor(cor):
+    os.system(cor)
