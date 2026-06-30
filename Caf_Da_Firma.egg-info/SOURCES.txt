@@ -1,5 +1,0 @@
-setup.py
-Caf_Da_Firma.egg-info/PKG-INFO
-Caf_Da_Firma.egg-info/SOURCES.txt
-Caf_Da_Firma.egg-info/dependency_links.txt
-Caf_Da_Firma.egg-info/top_level.txt
